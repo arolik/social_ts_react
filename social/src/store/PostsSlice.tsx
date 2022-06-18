@@ -21,7 +21,8 @@ const PostsSlice = createSlice({
         createPost(state, action: PayloadAction<string>) {
             state.posts.push({
                 id: new Date().toISOString(),
-                text: action.payload
+                text: action.payload,
+                
             })
         }
     }

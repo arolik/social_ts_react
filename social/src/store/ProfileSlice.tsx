@@ -23,12 +23,12 @@ type ProfilePhones = {
 
 type ProfileWorks = {
     currentWork: string,
-    allWorks: []
+    allWorks: Array<ItemInfo>
 }
 
 type ProfileCities = {
     currentCity: string,
-    allCities: []
+    allCities: Array<ItemInfo>
 }
 
 type ProfileItems = {
@@ -36,8 +36,8 @@ type ProfileItems = {
         statuses: ProfileStatus,
         emails: ProfileEmails,
         phones: ProfilePhones,
-        works: Array<ProfileWorks>,
-        cities: Array<ProfileCities>
+        works: ProfileWorks,
+        cities: ProfileCities
     }
 }
 
@@ -46,8 +46,8 @@ const initialState:  ProfileItems = {
         statuses: { currentStatus:'', allStatuses: [] },
         emails: { currentEmail:'', allEmails: [] },
         phones: { currentPhone: '', allPhones: [] },
-        works: [],
-        cities: []
+        works: { currentWork: '', allWorks: [] },
+        cities: { currentCity: '', allCities: [] }
     }
 }
 
@@ -57,7 +57,7 @@ const ProfileSlice = createSlice({
     reducers: {
         createNewStatus (state, action: PayloadAction<string>) {
             state.profileItems.statuses.currentStatus = action.payload;
-            state.profileItems.statuses.allStatuses.push({id: new Date().toISOString(), text: action.payload});
+            state.profileItems.statuses.allStatuses.push({id: new Date().toISOString(), text: action.payload });
         },
         createNewEmail (state, action: PayloadAction<string>) {
             state.profileItems.emails.currentEmail = action.payload;
@@ -65,12 +65,20 @@ const ProfileSlice = createSlice({
         },
         createNewPhone (state, action: PayloadAction<string>) {
             state.profileItems.phones.currentPhone = action.payload;
-            state.profileItems.phones.allPhones.push({id: new Date().toISOString(), text: action.payload})
+            state.profileItems.phones.allPhones.push({id: new Date().toISOString(), text: action.payload});
+        },
+        createNewWork (state, action: PayloadAction<string>) {
+            state.profileItems.works.currentWork = action.payload;
+            state.profileItems.works.allWorks.push({id: new Date().toISOString(), text: action.payload });
+        },
+        createNewCity (state, action: PayloadAction<string>) {
+            state.profileItems.cities.currentCity = action.payload;
+            state.profileItems.cities.allCities.push({id: new Date().toISOString(), text: action.payload })
         }
     }
 })
 
-export const { createNewStatus, createNewEmail, createNewPhone } = ProfileSlice.actions;
+export const { createNewStatus, createNewEmail, createNewPhone, createNewWork, createNewCity } = ProfileSlice.actions;
 
 export default ProfileSlice.reducer;
 

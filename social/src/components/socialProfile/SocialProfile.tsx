@@ -1,5 +1,6 @@
 
 import {  Divider, Row, Typography } from "antd"
+import MyPosts from "./listPosts/MyPosts";
 import SocialAvatar from "./SocialAvatar";
 import SocialInfo from "./SocialInfo";
 
@@ -15,8 +16,8 @@ const SocialProfile: React.FC = () => {
                 </Divider>
             </Row>
             <SocialInfo />
-            
             <Divider></Divider>
+            <MyPosts/>
         </>
     )
 }
