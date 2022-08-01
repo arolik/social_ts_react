@@ -4,7 +4,6 @@ import { ChangeEvent, useState } from "react";
 import { socialSpringGreen } from "../../../colors";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import { createNewPhone } from "../../../store/ProfileSlice";
-import './../SocialInfo.css';
 const { Text } = Typography;
 
 

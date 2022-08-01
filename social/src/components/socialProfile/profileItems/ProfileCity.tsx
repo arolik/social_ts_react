@@ -4,7 +4,6 @@ import { ChangeEvent, useState } from "react";
 import { socialDarkLateGrey } from "../../../colors";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import { createNewCity } from "../../../store/ProfileSlice";
-import './../SocialInfo.css';
 const { Text } = Typography;
 
 const ProfileCity: React.FC = () => {

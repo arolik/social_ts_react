@@ -4,7 +4,6 @@ import { ChangeEvent, useState } from "react";
 import { socialGoldColor } from "../../../colors";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import { createNewStatus } from "../../../store/ProfileSlice";
-import './../SocialInfo.css';
 const { Text } = Typography;
 
 

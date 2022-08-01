@@ -5,7 +5,6 @@ import ProfileEmail from "./profileItems/ProfileEmail";
 import ProfilePhone from "./profileItems/ProfilePhone";
 import ProfileStatus from "./profileItems/ProfileStatus";
 import ProfileWork from "./profileItems/ProfileWork";
-import './SocialInfo.css';
 
 
 const SocialInfo: React.FC = () => {

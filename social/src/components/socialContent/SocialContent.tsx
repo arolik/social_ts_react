@@ -3,7 +3,7 @@ import { Content } from "antd/lib/layout/layout";
 import { Route, Routes } from "react-router-dom";
 import SocialMessages from "../socialMessages/SocialMessages";
 import SocialNews from "../socialNews/SocialNews";
-import './SocialContent.css';
+
 import SocialProfile from "../socialProfile/SocialProfile";
 import SocialFriends from "../socialFriends/SocialFriends";
 import SocialGroups from "../socialGroups/SocialGroups";

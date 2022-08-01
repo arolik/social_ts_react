@@ -4,7 +4,6 @@ import { ChangeEvent, useState } from "react";
 import { socialTan} from "../../../colors";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import { createNewWork } from "../../../store/ProfileSlice";
-import './../SocialInfo.css';
 const { Text } = Typography;
 
 const ProfileWork: React.FC = () => {

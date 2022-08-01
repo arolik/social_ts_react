@@ -1,2 +1,32 @@
 
+.social-header {
+    padding: 0px 0px;
+}
 
+.social-content_wrapper {
+    padding: 15px 10px;
+}
+
+.social-info_image {
+    margin-right: 15px;
+}
+
+.social-info_myInfo_item {
+    margin-bottom: 15px;
+}
+
+.social-info_create-post-btn {
+    width: 100%;
+}
+
+.social-info_divider {
+    margin: 15px 0px;
+}
+
+.post-text  {
+    color: red;
+}
+
+.social-posts_list li {
+    display: block;
+}

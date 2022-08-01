@@ -2,8 +2,8 @@ import { UserOutlined } from "@ant-design/icons";
 import { Avatar, Button, Col, Input, Modal, Row } from "antd";
 import { ChangeEvent, useState } from "react";
 import { useAppDispatch } from "../../../store/hooks";
-import { createPost } from "../../../store/PostsSlice";
-import './myPosts.css';
+import { addNewPost } from "../../../store/PostsSlice";
+
 
 
 const CreatePost: React.FC = () => {
@@ -18,7 +18,7 @@ const CreatePost: React.FC = () => {
     }
 
     function publicNewPost () {
-        dispatch(createPost(currentPostValue));
+        dispatch(addNewPost(currentPostValue));
         setIsShowCreateModalPost(false);
         changePostValue('');
     }

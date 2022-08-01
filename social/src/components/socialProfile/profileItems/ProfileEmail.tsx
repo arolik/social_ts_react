@@ -4,7 +4,6 @@ import { ChangeEvent, useState } from "react";
 import { socialDobgerBlue } from "../../../colors";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import { createNewEmail } from "../../../store/ProfileSlice";
-import './../SocialInfo.css';
 const { Text } = Typography;
 
 

@@ -16,7 +16,7 @@ const SocialProfile: React.FC = () => {
                 </Divider>
             </Row>
             <SocialInfo />
-            <Divider></Divider>
+            <Divider className="social-info_divider" ></Divider>
             <MyPosts/>
         </>
     )

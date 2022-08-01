@@ -1,7 +1,6 @@
 import { Col, Menu, Row } from "antd";
 import { Header } from "antd/lib/layout/layout";
 import { Link } from "react-router-dom";
-import './socialHeader.css';
 
 
 const SocialHeader: React.FC = () => {
